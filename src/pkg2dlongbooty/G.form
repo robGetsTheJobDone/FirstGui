@@ -62,24 +62,26 @@
                   <Component id="jScrollPane1" alignment="0" pref="419" max="32767" attributes="0"/>
                   <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="Author" max="32767" attributes="0"/>
-                          <Component id="Subject" max="32767" attributes="0"/>
-                          <Component id="Date" max="32767" attributes="0"/>
-                          <Component id="ISBN" max="32767" attributes="0"/>
-                          <Component id="Publisher" min="-2" pref="98" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="15" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="Author" max="32767" attributes="0"/>
+                              <Component id="Subject" max="32767" attributes="0"/>
+                              <Component id="Date" max="32767" attributes="0"/>
+                              <Component id="ISBN" max="32767" attributes="0"/>
+                              <Component id="Publisher" min="-2" pref="98" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="Name" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="Name" min="-2" pref="98" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -96,9 +98,9 @@
                       <Component id="jScrollPane2" min="-2" pref="41" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="Name" min="-2" pref="20" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="Author" min="-2" pref="20" max="-2" attributes="0"/>
@@ -197,7 +199,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="search" pref="418" max="32767" attributes="0"/>
+                      <Component id="Sea" pref="418" max="32767" attributes="0"/>
                       <Component id="choice1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -208,7 +210,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="0" pref="21" max="32767" attributes="0"/>
-                  <Component id="search" min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="Sea" min="-2" pref="36" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="choice1" min="-2" pref="42" max="-2" attributes="0"/>
               </Group>
@@ -229,10 +231,13 @@
             <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="choice1.addItem(&quot;Title&quot;);&#xa;//should sort a-z&#xa;choice1.addItem(&quot;ISBN&quot;);&#xa;// first to last&#xa;choice1.addItem(&quot;Subject&quot;);&#xa;// sort a-z &#xa;choice1.addItem(&quot;Date&quot;);&#xa;// first to last&#xa;choice1.addItem(&quot;Publisher&quot;);&#xa;choice1.addItem(&quot;Author&quot;);&#xa;SearchTitle();"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="search">
+        <Component class="javax.swing.JTextField" name="Sea">
           <Properties>
             <Property name="text" type="java.lang.String" value="Search"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SeaActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

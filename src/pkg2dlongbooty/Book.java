@@ -17,7 +17,7 @@ public class Book implements java.io.Serializable{
      public ArrayList<String>Sub  = new ArrayList<>(); 
    public ArrayList<String> Auth = new ArrayList<>();
     
-    public Book(String Title, String pub, int year, int Cat, boolean circ ){
+    public Book(String Title, String Pub, int year, int Cat, boolean circ ){
      this.Cat = Cat; this.Pub = Pub; this.Title = Title; this.circ = circ; this.year = year;  
     
     }
@@ -33,13 +33,23 @@ public class Book implements java.io.Serializable{
        }
         return temp;
     }
-    public String SubStr(){
-         String d = " "; 
-       for (int x =0; x < Sub.size(); x++){
-          d = d + Sub.get(x); 
+  
+    public ArrayList<String>  AuthStr(){
+        ArrayList<String> temp = new ArrayList<String>();
+        for(int x = 0; x < Auth.size(); x++){
+            temp.add(Auth.get(x));
+           
        }
-       return d;
-       
+        return temp;  
+    }
+    public String SubStr(){
+        ArrayList<String> g = new ArrayList<>();
+        g = GetArraySubString(); 
+        String p ="";
+        for(int x=0; x < g.size(); x++){
+            p = p + g.get(x);
+        }
+        return p;
     }
     public String GetArrayAut(int x){
         return Auth.get(x);
